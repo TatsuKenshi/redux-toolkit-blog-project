@@ -17,6 +17,7 @@ const UserPage = () => {
             <Link to={`/post/${post.id}`}>{post.title}</Link>
         </li>
     ));
+
     return (
         <section>
             <h2>{user?.name}</h2>
