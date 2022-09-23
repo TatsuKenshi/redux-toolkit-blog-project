@@ -48,40 +48,59 @@ const AddPostForm = () => {
     ));
 
     return (
-        <section>
-            <h2>Add a New Post</h2>
-            <form>
-                <label htmlFor="postTitle">Post Title:</label>
-                <input
-                    type="text"
-                    id="postTitle"
-                    name="postTitle"
-                    value={title}
-                    onChange={onTitleChanged}
-                />
-                <label htmlFor="postAuthor">Author:</label>
-                <select
-                    id="postAuthor"
-                    value={userId}
-                    onChange={onAuthorChanged}
-                >
-                    <option value=""></option>
-                    {usersOptions}
-                </select>
-                <label htmlFor="postContent">Content:</label>
-                <textarea
-                    id="postContent"
-                    name="postContent"
-                    value={content}
-                    onChange={onContentChanged}
-                />
-                <button
-                    type="button"
-                    onClick={onSavePostClicked}
-                    disabled={!canSave}
-                >
-                    Save Post
-                </button>
+        <section className="text-center w-screen">
+            <h2 className="text-2xl font-bold pt-4 mt-[25vh] md:mt-0">
+                Add a New Post
+            </h2>
+            <form className="mt-4 pb-8 w-max mx-auto text-left md:max-w-[75vw]">
+                <div>
+                    <label htmlFor="postAuthor">Author:</label>
+                </div>
+                <div>
+                    <select
+                        id="postAuthor"
+                        value={userId}
+                        onChange={onAuthorChanged}
+                    >
+                        <option value=""></option>
+                        {usersOptions}
+                    </select>
+                </div>
+                <div>
+                    <label htmlFor="postTitle">Post Title:</label>
+                </div>
+                <div>
+                    <input
+                        type="text"
+                        id="postTitle"
+                        name="postTitle"
+                        value={title}
+                        onChange={onTitleChanged}
+                        className="border border-solid border-black"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="postContent">Content:</label>
+                </div>
+                <div>
+                    <textarea
+                        id="postContent"
+                        name="postContent"
+                        value={content}
+                        onChange={onContentChanged}
+                        className="border border-solid border-black"
+                    />
+                </div>
+                <div className="text-center mt-2">
+                    <button
+                        type="button"
+                        onClick={onSavePostClicked}
+                        disabled={!canSave}
+                        className="border border-solid border-pink-600 px-2 rounded-lg text-pink-600 font-bold hover:text-white hover:bg-pink-600"
+                    >
+                        Save Post
+                    </button>
+                </div>
             </form>
         </section>
     );
