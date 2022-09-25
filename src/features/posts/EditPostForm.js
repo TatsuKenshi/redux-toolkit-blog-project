@@ -91,7 +91,9 @@ const EditPostForm = () => {
             </h2>
             <form className="mt-4 pb-8 w-max mx-auto text-left md:max-w-[75vw]">
                 <div>
-                    <label htmlFor="postTitle">Post Title: </label>
+                    <label htmlFor="postTitle" className="text-lg font-bold">
+                        Post Title:{" "}
+                    </label>
                 </div>
                 <div>
                     <input
@@ -100,11 +102,13 @@ const EditPostForm = () => {
                         name="postTitle"
                         value={title}
                         onChange={onTitleChanged}
-                        className="border border-solid border-black"
+                        className="w-[100%] rounded-lg"
                     />
                 </div>
                 <div>
-                    <label htmlFor="postAuthor">Author: </label>
+                    <label htmlFor="postAuthor" className="text-lg font-bold">
+                        Author:{" "}
+                    </label>
                 </div>
                 <div>
                     <select
@@ -117,7 +121,9 @@ const EditPostForm = () => {
                     </select>
                 </div>
                 <div>
-                    <label htmlFor="postContent">Content: </label>
+                    <label htmlFor="postContent" className="text-lg font-bold">
+                        Content:{" "}
+                    </label>
                 </div>
                 <div>
                     <textarea
@@ -125,7 +131,7 @@ const EditPostForm = () => {
                         id="postContent"
                         value={content}
                         onChange={onContentChanged}
-                        className="border border-solid border-black"
+                        className="w-[100%] h-[100px] rounded-lg"
                     ></textarea>
                 </div>
                 <div className="flex justify-around">

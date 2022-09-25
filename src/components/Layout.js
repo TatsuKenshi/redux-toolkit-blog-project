@@ -9,7 +9,7 @@ const Layout = () => {
         <>
             <Header />
             <HeroImage />
-            <main>
+            <main className="bg-slate-200 min-h-screen">
                 <Outlet />
             </main>
         </>

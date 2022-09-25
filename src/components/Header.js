@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className="flex h-16 bg-slate-300 items-center justify-center">
-            <h1 className="text-2xl font-bold mr-2 text-teal-600">
+        <header className="flex h-16 bg-slate-400 items-center justify-center">
+            <h1 className="text-2xl font-bold mr-2 text-pink-600">
                 Redux Blog
             </h1>
             <nav>

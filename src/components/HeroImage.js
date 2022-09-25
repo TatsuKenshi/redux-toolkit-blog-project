@@ -5,7 +5,7 @@ const HeroImage = () => {
     return (
         <div
             style={{ backgroundImage: `url(${hero})` }}
-            className="hidden md:block md:h-[400px] md:bg-center md:bg-fixed md:bg-cover"
+            className="hidden md:block md:h-[33vh] md:bg-center md:bg-fixed md:bg-cover"
         ></div>
     );
 };
